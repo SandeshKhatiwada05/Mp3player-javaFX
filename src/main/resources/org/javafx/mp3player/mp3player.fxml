@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<BorderPane fx:controller="org.javafx.mp3player.MP3PlayerController"
+            xmlns:fx="http://javafx.com/fxml"
+            stylesheets="@style.css">
+
+    <top>
+        <Label fx:id="titleLabel"
+               text="Sandesh's MP3 Player 🎵"
+               styleClass="title-label"
+               BorderPane.alignment="CENTER"/>
+    </top>
+
+    <center>
+        <VBox spacing="15" alignment="CENTER">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+
+            <Label fx:id="currentSongLabel"
+                   text="No song selected"
+                   styleClass="song-label"/>
+
+            <HBox spacing="10" alignment="CENTER">
+                <Button text="🎵 Choose Song" onAction="#chooseSong"/>
+                <Button text="▶ Play" onAction="#play"/>
+                <Button text="⏸ Pause" onAction="#pause"/>
+                <Button text="⏹ Stop" onAction="#stop"/>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>
