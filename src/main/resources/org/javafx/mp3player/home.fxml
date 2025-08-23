@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.javafx.mp3player.HomeController"
+      alignment="CENTER" spacing="20" padding="30">
+
+    <Label text="✨ Welcome Sandesh ✨" styleClass="title-label"/>
+    <Label text="What do you want to do?" styleClass="song-label"/>
+
+    <HBox alignment="CENTER" spacing="20">
+        <Button text="🎵 Play Music" onAction="#openMusic"/>
+        <Button text="🖼 View Image" onAction="#openImageViewer"/>
+    </HBox>
+</VBox>
