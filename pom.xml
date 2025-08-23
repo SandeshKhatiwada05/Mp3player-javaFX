@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.javaFX</groupId>
-    <artifactId>MP3Player</artifactId>
+    <artifactId>ImageViewerMP3Player</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>MP3Player</name>
 
