@@ -1,18 +1,38 @@
-# Sandesh's MP3 Player 🎵
-A simple MP3 player built using JavaFX 22. Play, pause, and browse your favorite songs with a modern UI.
+# 🎶🖼 Sandesh's MP3 & Image Viewer
 
-🛠 Tech Used: JavaFX, Maven, FXML
+A JavaFX desktop app with **MP3 Player** and **Image Viewer**.  
 
-📦 Run:
+## Features
+- 🎵 Play, pause, stop MP3 files with sleek UI  
+- 🖼 View images with auto-scaling and aspect ratio  
+- Modern layout and styling  
+
+## Tech Stack
+- Java 22, JavaFX 22, Maven, IntelliJ IDEA  
+
+## Project Structure
+```bash
+src/
+└── main/
+├── java/org/javafx/mp3player/
+│ ├── Mp3PlayerController.java
+│ ├── ImageViewerController.java
+│ └── MainApp.java
+├── resources/
+│ ├── fxml/mp3player.fxml
+│ ├── fxml/imageviewer.fxml
+│ └── style.css
+└── pom.xml
+```
+
+
+## Run
+```bash
+git clone https://github.com/SandeshKhatiwada05/ImageViewer-and-Mp3player-javaFX
+cd Sandesh-MP3-ImageViewer
+mvn clean install
 mvn javafx:run
+```
 
-🎧 Features:
-- Play/Pause/Stop
-- File Chooser to select MP3
-- Stylish UI with custom CSS
-
-📁 Requirements:
-- Java 22+
-- Maven installed
-
-Enjoy the music! 🎶
+## Author
+Sandesh Khatiwada
