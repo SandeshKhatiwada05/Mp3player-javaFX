@@ -1,38 +1,35 @@
 package org.javafx.mp3player;
 
-
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
-import javafx.scene.Parent;
 
 public class HomeController {
 
-    private Stage stage;
-
-    public void setStage(Stage stage) {
-        this.stage = stage;
+    @FXML
+    public void openMusic(ActionEvent event) {
+        switchScene("/org/javafx/mp3player/mp3player.fxml", event);
     }
 
     @FXML
-    public void openMusic() {
-        switchScene("/org/javafx/mp3player/mp3player.fxml");
+    public void openImageViewer(ActionEvent event) {
+        switchScene("/org/javafx/mp3player/imageviewer.fxml", event);
     }
 
-    @FXML
-    public void openImageViewer() {
-        switchScene("/org/javafx/mp3player/imageviewer.fxml");
-    }
-
-    private void switchScene(String fxmlPath) {
+    private void switchScene(String fxmlPath, ActionEvent event) {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource(fxmlPath));
             Parent root = loader.load();
 
-            stage = (Stage) root.getScene().getWindow(); // ensure we get current stage
+            // ✅ Get stage from button (event source), not from root
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.show();
+
         } catch (Exception e) {
             e.printStackTrace();
         }

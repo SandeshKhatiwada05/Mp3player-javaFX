@@ -6,13 +6,13 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 
-public class MP3Player extends Application {
+public class MP3PlayerImageViewer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/javafx/mp3player/mp3player.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/org/javafx/mp3player/home.fxml"));
         Parent root = loader.load();
-        primaryStage.setTitle("Sandesh's MP3");
+        primaryStage.setTitle("Sandesh's Multi-Tool 🎵🖼");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }

@@ -5,7 +5,10 @@
 
 <VBox xmlns:fx="http://javafx.com/fxml"
       fx:controller="org.javafx.mp3player.HomeController"
-      alignment="CENTER" spacing="20" padding="30">
+      alignment="CENTER" spacing="20">
+    <padding>
+        <Insets top="30" right="30" bottom="30" left="30"/>
+    </padding>
 
     <Label text="✨ Welcome Sandesh ✨" styleClass="title-label"/>
     <Label text="What do you want to do?" styleClass="song-label"/>
@@ -15,3 +18,4 @@
         <Button text="🖼 View Image" onAction="#openImageViewer"/>
     </HBox>
 </VBox>
+
