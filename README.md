@@ -34,5 +34,11 @@ mvn clean install
 mvn javafx:run
 ```
 
+## Screenshots
+<img width="447" height="238" alt="image" src="https://github.com/user-attachments/assets/813d4a33-33c2-4354-b128-33aa47e96fed" />
+<img width="750" height="778" alt="image" src="https://github.com/user-attachments/assets/4055a19c-92c1-4a53-afae-5145fe56adc4" />
+<img width="596" height="299" alt="image" src="https://github.com/user-attachments/assets/5b35ef74-08aa-4f61-b407-46188e284e0d" />
+
+
 ## Author
 Sandesh Khatiwada
